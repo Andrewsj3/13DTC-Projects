@@ -73,7 +73,7 @@ def find_user(user_list, messages=True):
     else:
         if messages:
             print(f"{user_to_find} is not in the user list.")
-        return
+        return find_user(user_list, messages=messages)
 
 
 def find_book(book_list, user_list, messages=True):
